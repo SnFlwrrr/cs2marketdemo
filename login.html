@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | CS2Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleeapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu18NIOCGHjZp0aGIs6VlUYbnOx9VGGPN96g&s" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href=""></a>Trang Chủ</li>
+                    <li><a href=""></a>Sản Phẩm</li>
+                    <li><a href=""></a>Thông Tin </li>
+                    <li><a href=""></a>Liên Hệ</li>
+                    <li><a href=""></a>Tài Khoản</li>
+                </ul>
+            </nav>
+            <img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" width="30px" height="30px">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/292/406/non_2x/hamburger-menu-line-icon-free-vector.jpg" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+        </div>
+    </div>
+<!------Account-page-------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="https://warbreak.com/landing/main-screen-img.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Đăng nhập</span>
+                        <span onclick="register()">Đăng ký</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Tên Đăng Nhập">
+                        <input type="password" placeholder="Mật Khẩu">
+                        <button type="submit" class="btn">Đăng Nhập</button>
+                        <a href="">Quên Mật Khẩu</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Tên Đăng Nhập">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Mật Khẩu">
+                        <button type="submit" class="btn">Đăng Kí</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+<!-----footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Trải nghiệm tại web hoặc tải xuống ứng dụng</h3>
+                    <p>Thích hợp cho Windows, Mac OS X và Linux.</p>
+                    <div class="app-logo">
+                        <img src="https://play-lh.googleusercontent.com/52_DMY5417awaEgJf3_9mWgEuO2t1JfkGab8kM-LD6l5u6cGm_1-GsoQ_IyWFHdbkA">
+                        <img src="https://static.wikia.nocookie.net/cswikia/images/b/b1/Competitive_logo_cs2.png/revision/latest/thumbnail/width/360/height/360?cb=20231024114438">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="data:image/png;base64,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">
+                    <p>Luôn luôn lắng nghe ý kiến của khách hàng.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Các web liên kết khác</h3>
+                    <ul>
+                        <li>Mã Đổi Thưởng</li>
+                        <li>Bài Đăng Nhận Xét</li>
+                        <li>Bản Quyền</li>
+                        <li>Tham Gia Khảo Sát</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li>Steam</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>TikTok</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Bản Quyền 30/11/2024-Hướng dẫn trên Youtube</p>
+        </div>
+    </div>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+<!-------js for toggle Form-------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translate(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translate(0px)";
+        }
+    </script>
+
+
+
+</body>
+</html>
